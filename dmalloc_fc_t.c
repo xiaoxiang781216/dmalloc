@@ -1188,14 +1188,6 @@ int	main(int argc, char **argv) {
     }
   }
   else {
-    if (silent_b) {
-      (void)printf("ERROR: Random tests failed.  Last dmalloc error: %s (err %d)\n",
-		   dmalloc_strerror(dmalloc_errno), dmalloc_errno);
-    }
-    else {
-      (void)printf("  Failed.  Last dmalloc error: %s (err %d)\n",
-		   dmalloc_strerror(dmalloc_errno), dmalloc_errno);
-    }
     final = 1;
   }
   
